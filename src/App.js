@@ -1,27 +1,28 @@
 import './App.css';
 import React from 'react';
 import {Route} from 'react-router-dom'
-import Nav from "./components/Nav/Nav"
+import Nav from "../src/components/Nav/Nav"
 import Home from './views/home/Home'
 import Mapamundi from './views/mapamundi/Mapamundi'
 import Feed from "./views/feed/Feed"
 import Form from './views/form/Form'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div>
       <Nav/>
       <Route exact path="/">
-        <Home/>
+        {/* <Home/> */}
       </Route>
       <Route exact path="/map">
-        <Mapamundi/>
+        {/* <Mapamundi/> */}
       </Route>
       <Route exact path="/trip/:id">
-        <Feed/>
+        {/* <Feed/> */}
       </Route>
       <Route exact path="/addtrip">
-        <Form/>
+        {/* <Form/> */}
       </Route>
     </div>     
   );
