@@ -6,7 +6,6 @@ import Home from './views/home/Home'
 import Mapamundi from './views/mapamundi/Mapamundi'
 import Feed from "./views/feed/Feed"
 import Form from './views/form/Form'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
