@@ -1,16 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import "./index.css";
 import App from "./App";
 
+import { ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store/index";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
     <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-  document.getElementById("root")
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
+    </BrowserRouter>
 );
