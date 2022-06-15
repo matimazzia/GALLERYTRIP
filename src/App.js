@@ -6,6 +6,7 @@ import Home from './views/home/Home'
 import Mapamundi from './views/mapamundi/Mapamundi'
 import Feed from "./views/feed/Feed"
 import Form from './components/Form/form';
+import Footer from './components/Footer/footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route exact path="/addtrip">
         <Form/>
       </Route>
+      <Footer/>
     </div>     
   );
 }
