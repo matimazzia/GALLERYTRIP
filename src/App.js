@@ -5,7 +5,7 @@ import Nav from "../src/components/Nav/Nav"
 import Home from './views/home/Home'
 import Mapamundi from './views/mapamundi/Mapamundi'
 import Feed from "./views/feed/Feed"
-import Form from './views/form/Form'
+import Form from './components/Form/form';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         {/* <Feed/> */}
       </Route>
       <Route exact path="/addtrip">
-        {/* <Form/> */}
+        <Form/>
       </Route>
     </div>     
   );
